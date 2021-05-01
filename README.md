@@ -1,7 +1,7 @@
 # Mission7
 [MECF] Réalisation d'un trombi dynamique et responsive avec Base De Données
 
-Pour cette mission, il nous a était demandé d'utilisé un template de Bootstrap afin de mener à bien la mission.
+Pour cette mission, il nous a était demandé d'utilisé le template "Business FrontPage" de Bootstrap afin de mener à bien la mission donnée.
 
 Vous trouverez ci-dessous un lien vers la documention technique de la mission: 
 <p><a href="https://drive.google.com/file/d/1xvqIdkebz3yygB0Jxi6oOUG5hQE1SdDo/view?usp=sharing">Lien vers Doc Tech<a></p>
