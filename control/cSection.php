@@ -2,13 +2,13 @@
     include 'models/managerStagiaires.php';
 
     //cas ou l'utilisateur à choisi de mémoriser la page trombi dans c'est favori
-    //si la variable session[username] && session[pass] n'est pas existant alors on redirection vers index?act <= ac
-    if(!isset($_SESSION["username"]) && !isset($_SESSION["pass"])){
+    //si la variable session[email] && session[pass] n'est pas existant alors on redirection vers index?act <= ac
+    if(!isset($_SESSION["email"]) && !isset($_SESSION["pass"])){
         header('location:./index.php?act=ac');
     }
 
     //condition ici ou on demande si le param (coSec = codeSection) existe et est pas null 
-    //si condition sont respecté alors on fait nos affichages en appellant la view 
+    //si condition sont respecté alors on fait nos affichages en appelant la view 
     //sinon redirection vers le trombi avec un param Err
     if(isset($_GET["coSec"])){
         

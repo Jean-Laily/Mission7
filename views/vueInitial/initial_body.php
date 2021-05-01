@@ -1,17 +1,18 @@
 <!-- contenu body trombi -->
 <div class="container">
   <div class="row">
-    <div class="col-12">
-      <table class="table text-center">
+    <div class="col-lg-12 text-center">
+      <table class="table table-bordered text-center">
           <thead>
             <tr>
-              <th colspan="4"><h4>Liste des stagiaires commençant par l'initial <?php echo $lettreChoisi; ?></h4></th>
+              <th colspan="5"><h4>Liste des stagiaires commençant par l'initial <?php echo $lettreChoisi; ?></h4></th>
             </tr>
-            <tr>
+            <tr class="font-weight-bold ">
               <td>Code section</td>
               <td>Code stagiaire</td>
               <td>Nom stagiaire</td>
-              <td>Prenom stagiaire</td>
+              <td>Prénom stagiaire</td>
+              <td></td>
             </tr>
           </thead>
           <tbody>
@@ -41,14 +42,14 @@
                     </td>
                 </tr>';
                 $aucunStag = false; 
-              }
+              } //fin if
               
-            }
+            }//fin foreach
+
             if($aucunStag){
-              echo '<td><strong>Erreur, pas de nom correspondant à cette initial</strong></td>' ;
-            } 
-             
-            ?>
+              echo '<td colspan="5"><strong>Erreur, pas de nom correspondant à cette initial</strong></td>' ;
+            }?>
+            
           </tbody>   
       </table>
     </div>

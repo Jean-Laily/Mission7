@@ -6,27 +6,28 @@
     if(isset($_GET["err"])){
       echo $_GET["err"];
     } ?>
-    <div class="col-12">
-      <table class="table table-striped text-center">
+    <div class="col-lg-12 text-center">
+      <table class=" table table-bordered text-center">
           <thead>
             <tr>
-              <th colspan="4"><h4>Liste des sections</h4></th>
+              <th colspan="5"><h4>Liste des sections</h4></th>
             </tr>
-            <tr>
-              <td>code section</td>
-              <td>libelé section</td>
-              <td>date debut section</td>
-              <td>nombre stagiaire</td>
+            <tr class="font-weight-bold ">
+              <td>Code section</td>
+              <td>Libellé section</td>
+              <td>Date début section</td>
+              <td>Nombre stagiaire</td>
+              <td></td>
             </tr>
           </thead>
           <tbody >
             <!-- affichage de la liste des section existante  -->
             <?php 
-            //lecture de l'ensemble du tableau par paire ?!? $nbSect correspond à l'intération du forEach 
+            //lecture de l'ensemble du tableau par paire ?!? $nbSect correspond à l'itération du forEach 
             foreach($tabListeSec as $keys => $values){
              echo '
               <tr>
-                  <td><img src="./assets/media/'.$values["codSec"].'_icons.png" /></td>
+                  <td class="iconSection"><img  src="./assets/media/'.$values["codSec"].'_icons.png " width="70" weigth="70" /></td>
                   <td>'.$values["libSec"].'</td>
                   <td>'.$values["datDebSec"].'</td>
                   <td>'.$values["nbStag"].'</td>
@@ -45,10 +46,10 @@
       </table>
     </div>
     <div class=" col-12 text-center">
-      <h4>Rechercher un stagiaire par initial </h4>
+      <h4>Recherche par initial </h4>
     </div>
     <div class="col-12 text-center">
-      <!-- appel la fonction d'affichage des lettres alphabetique -->
+      <!-- appel la fonction d'affichage des lettres alphabétique -->
       <?php afficheAlphabet(); ?>
     </div>
     <br/> <br/>

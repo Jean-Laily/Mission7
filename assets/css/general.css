@@ -1,0 +1,41 @@
+
+.navbar{
+    background-color: #5B4B66;
+}
+
+header{
+    background-color: #874fb3;
+}
+
+.btn{
+    background-color:  #874fb3  !important;
+    border:#9E84B3 1px solid;
+    box-shadow: 1px 1px 1px black;
+}
+
+.connection{
+    background-color:  #874fb3;
+    border:none;
+    border-radius: 20px 5px 20px 5px;
+}
+
+footer{
+    background-color: #5B4B66;
+  
+}
+
+#erreurMSG{
+    color: rgb(204, 36, 36);
+    font-weight: bold;
+}
+
+.new{
+    background-color: #9E84B3;
+}
+
+.iconSection{
+    padding-top: 2px !important;
+    padding-right: 0px !important;
+    padding-bottom: 2px !important;
+    padding-left: 0px !important;
+}

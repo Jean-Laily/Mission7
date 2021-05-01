@@ -4,7 +4,7 @@
 function getNews($nb){
     global $pdo;
  
-    $sql  = 'SELECT dat, lib';              //selectionne les colonnes à afficher
+    $sql  = 'SELECT dat, lib';              //sélectionne les colonnes à afficher
     $sql .= '   FROM news';                 //depuis la table news
     $sql .= '   ORDER BY dat DESC';         //par ordre décroissant sur la colonne dat
     $sql .= '   LIMIT '.$nb;                //avec une limite d'affichage de 5

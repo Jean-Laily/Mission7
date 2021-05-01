@@ -189,7 +189,7 @@ function getListeStagiaire(){
 
  function getUser(){
 
-    //tableau pour definir les utilisateurs
+    //tableau pour définir les utilisateurs
     $tabUsers = array (
        'jean.yansin@gmail.com' => 'azerty123',
        'to@to.to' => 'toto',

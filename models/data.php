@@ -3,10 +3,10 @@ $pdo = getPDO();
 
 function getPDO(){
 
-    //initialisation et affectation des variables et de leur valeur par defaut 
-    $url = "localhost";         //@ip.... par ex : polenumerique.re ou 172.20.1.101
+    //initialisation et affectation des variables et de leur valeur par défaut 
+    $url = "localhost";         //@ip.... par ex : polenumérique.re ou 172.20.1.101
     $port = '';                     //port ip ... par ex : "3306"
-    $char = 'UTF8';                 //charset ... defini le type d'encodage souhaité
+    $char = 'UTF8';                 //charset ... défini le type d'encodage souhaité
     $bdd = 'trombi';                // nom de la data base
     $login = "root";                
     $pass = "";
@@ -19,7 +19,7 @@ function getPDO(){
         if($port != '') $serveur .= ';port='. $port;
         if($char != '') $serveur .= ';charset='. $char;
 
-        //parametrage de la connection
+        //paramétrage de la connection
         $pdo = new PDO($serveur, $login, $pass); 
         // $connection -> setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); // ?? appel de l'attribut ERRMODE ?
         // $connection -> exec();
@@ -27,7 +27,7 @@ function getPDO(){
 
 
     }catch(PDOException $e){
-        // echo 'Echec de la connection : ' .$e->getMessage();
+        // echo 'Échec de la connection : ' .$e->getMessage();
         $pdo == null;
     }
 

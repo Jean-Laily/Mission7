@@ -1,7 +1,3 @@
-<?php
-    // appel des outils universel pour le site
-    
-?>
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -12,14 +8,13 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Business Frontpage - Start Bootstrap Template</title>
+  <title>Trombi Exo - Bootstrap Template</title>
 
   <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="./assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
-  <link href="css/business-frontpage.css" rel="stylesheet">
-  <link href="css/general.css" rel="stylesheet" >
+  <link href="./assets/css/general.css" rel="stylesheet" >
 
 </head>
 
