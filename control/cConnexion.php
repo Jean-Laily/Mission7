@@ -9,8 +9,8 @@
     if(userExiste($mail, $mdp)){ 
         //création d'un variable session <= la valeur @id envoyer en post
         $roleUser = getRole($mail);
-        
         $nameTab = nameUserExiste($mail);
+
         foreach($nameTab as $value){
            $name = $value["username"];
         }
@@ -25,11 +25,3 @@
     }else{
         header('location:./index.php?act=ac&er=1');
     }
-
-    
-
-    
-
-    
-
-?>
