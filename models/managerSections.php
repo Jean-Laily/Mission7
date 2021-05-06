@@ -15,7 +15,5 @@ function getListeSection(){
 
     return $data;
 
-    var_dump($data);
-
 }
 ?>
