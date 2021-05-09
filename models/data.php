@@ -30,7 +30,7 @@ function getPDO(){
         // echo 'Échec de la connection : ' .$e->getMessage();
         $pdo == null;
     }
-
+    
     return $pdo;
 }
 
